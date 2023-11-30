@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Emissão de Nota Fiscal</title>
+</head>
+<body>
+
+  <h1>Emissão de Nota Fiscal de Serviço</h1>
+
+  <form id="notaFiscalForm">
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" required>
+
+    <label for="servico">Descrição do Serviço:</label>
+    <input type="text" id="servico" required>
+
+    <label for="valor">Valor do Serviço:</label>
+    <input type="number" id="valor" required>
+
+    <button type="button" onclick="calcularNotaFiscal()">Emitir Nota Fiscal</button>
+  </form>
+
+  <div id="notaFiscalResult">
+    <h2>Nota Fiscal</h2>
+    <table>
+        <thead>
+                <tr>
+                    <th class="pad">Cliente:</th>
+                    <th class="pad"> Descrição do Serviço:</th>
+                    <th class="pad"> Valor do Serviço:</th>
+                    <th class="pad"> Imposto (10%)</th>
+                    <th class="pad"> Total a Pagar:</th>
+                </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
