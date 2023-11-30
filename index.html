@@ -12,6 +12,10 @@
   <h1>Emissão de Nota Fiscal de Serviço</h1>
 
   <form id="notaFiscalForm">
+
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" required>
+
     <label for="cliente">Cliente:</label>
     <input type="text" id="cliente" required>
 
@@ -29,11 +33,14 @@
     <table>
         <thead>
                 <tr>
+                    <th class="pad">Empresa:</th>
                     <th class="pad">Cliente:</th>
                     <th class="pad"> Descrição do Serviço:</th>
                     <th class="pad"> Valor do Serviço:</th>
                     <th class="pad"> Imposto (10%)</th>
                     <th class="pad"> Total a Pagar:</th>
+                    <th class="pad"> Dia:</th>
+                    <th class="pad"> Horario:</th>
                 </tr>
         </thead>
         <tbody id="tbody">
